@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .link-active {
+    @apply border-b;
+  }
+
+  .link {
+    @apply p-2 hover:cursor-pointer;
+  }
+}

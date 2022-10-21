@@ -1,21 +1,15 @@
 import Header from './Header';
 import Footer from './Footer';
-import { FC, RefObject, useRef } from 'react';
+import { FC } from 'react';
 import Hero from './components/Hero';
 
 // Main Site
 const App: FC = () => {
-  const scrollTarget = useRef<HTMLElement>(null);
-  const scrollTo = (ref: RefObject<HTMLElement>) => {
-    console.log(ref.current);
-    // ref.current?.scrollIntoView( { behavior: 'smooth' } );
-  }
-
   return (
-    <div className="container mx-auto h-full max-w-prose p-4">
-      <Header scrollTo={scrollTo} />
+    <div className="container mx-auto h-full max-w-prose px-4">
+      <Header />
       <main>
-        <Hero ref={scrollTarget} />
+        <Hero />
       </main>
       <Footer />
     </div>
