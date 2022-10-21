@@ -2,6 +2,7 @@ import Header from './Header';
 import Footer from './Footer';
 import { FC } from 'react';
 import Hero from './components/Hero';
+import About from './components/About';
 
 // Main Site
 const App: FC = () => {
@@ -10,6 +11,7 @@ const App: FC = () => {
       <Header />
       <main>
         <Hero />
+        <About />
       </main>
       <Footer />
     </div>

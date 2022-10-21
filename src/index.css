@@ -8,6 +8,6 @@
   }
 
   .link {
-    @apply p-2 hover:cursor-pointer;
+    @apply px-2 hover:cursor-pointer;
   }
 }
