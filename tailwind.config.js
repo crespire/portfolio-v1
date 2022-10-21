@@ -11,7 +11,7 @@ module.exports = {
       'sand': '#F2EBBF',
       'tangerine': '#F3C486',
       'salmon': '#E6746C',
-      'pale': '#FCFBF2'
+      'pale': '#FCFBF2',
     },
     extend: {
       fontFamily: {
