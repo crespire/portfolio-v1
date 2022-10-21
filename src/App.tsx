@@ -1,13 +1,17 @@
+import Header from './Header';
+import Footer from './Footer';
 import { FC } from 'react';
-import { Outlet } from 'react-router-dom';
+import Hero from './components/Hero';
 
-// Template for Site
+// Main Site
 const App: FC = () => {
   return (
-    <div className="App">
+    <div className="container mx-auto h-full max-w-prose p-4">
+      <Header />
       <main>
-        <Outlet />
+        <Hero />
       </main>
+      <Footer />
     </div>
   );
 }
