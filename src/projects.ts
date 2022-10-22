@@ -11,7 +11,7 @@ export const projects: Array<Project> = [
     'liveURL': 'https://railsbook.crespire.dev/',
     'repoURL': `${repoBaseURL}/rails_railsbook`,
     'blurb': 'An implementation of Facebook using Rails 7',
-    'tech': ['Ruby on Rails', 'devise', 'Turbo/Stimulus', 'Sass CSS', 'RSpec', 'Heroku', 'AWS S3', 'git']
+    'tech': ['Ruby on Rails', 'Turbo/Stimulus', 'Sass CSS', 'RSpec', 'Heroku', 'AWS S3', 'git']
   },
   {
     'id': `${projectSlug}waldo`,
@@ -20,7 +20,7 @@ export const projects: Array<Project> = [
     'liveURL': 'https://crespire-waldo.vercel.app',
     'repoURL': `${repoBaseURL}/waldo`,
     'blurb': "A fullstack clicker game based on the classic children's books.",
-    'tech': ['React', 'React Router', 'Ruby on Rails', 'TailwindCSS', 'npm', 'git', 'vercel', 'render'],
+    'tech': ['React', 'Ruby on Rails', 'TailwindCSS', 'npm', 'git', 'vercel', 'render'],
   },
   {
     'id': `${projectSlug}shop`,
@@ -29,6 +29,6 @@ export const projects: Array<Project> = [
     'liveURL': 'https://cozy-creature-canteen.vercel.app',
     'repoURL': `${repoBaseURL}/js-shopping-cart`,
     'blurb': "A frontend storefront with multi-step checkout flow.",
-    'tech': ['React', 'React Router', 'TailwindCSS', 'npm', 'git', 'vercel'],
+    'tech': ['React', 'TailwindCSS', 'npm', 'git', 'vercel'],
   },
 ]
