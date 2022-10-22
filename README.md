@@ -8,4 +8,3 @@ SPA with a few sections:
 * About - SPA scroll
 * Projects - SPA scroll
 * Resume - Separate, plain HTML doc (can probably use github pages one)
-* Contact - SPA scroll
