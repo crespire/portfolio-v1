@@ -2,7 +2,7 @@ import { FC } from 'react';
 import logo from './assets/logo.png';
 import { Link } from "react-scroll";
 
-const headerOffset = 16 * -3;
+const headerOffset = 0;
 
 const Header: FC = () => {
   return (

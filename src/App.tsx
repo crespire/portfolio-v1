@@ -3,6 +3,7 @@ import Footer from './Footer';
 import { FC } from 'react';
 import Hero from './components/Hero';
 import About from './components/About';
+import Projects from './components/Projects';
 
 // Main Site
 const App: FC = () => {
@@ -12,6 +13,7 @@ const App: FC = () => {
       <main>
         <Hero />
         <About />
+        <Projects />
       </main>
       <Footer />
     </div>
