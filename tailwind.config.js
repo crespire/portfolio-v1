@@ -19,7 +19,7 @@ module.exports = {
         "barlow": ['Barlow', 'sans-serif']
       },
       gridTemplateColumns: {
-        'card': '0.33fr 0.15fr 1fr',
+        'card': '0.33fr 0.05fr 1fr',
       }
     },
   },
