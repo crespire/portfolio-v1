@@ -7,7 +7,7 @@ import GlobeDark from '../assets/globe-dark.png';
 
 const ProjectCard: FC<ProjectProps> = ({project}) => {
   return (
-    <article id={project.id} className="grid grid-cols-card p-2 transition ease-in duration-300 hover:scale-110">
+    <article id={project.id} className="grid grid-cols-card p-2 transition ease-in duration-300 hover:scale-125">
       <div>
         img
       </div>
