@@ -12,18 +12,22 @@ const ProjectCard: FC<ProjectProps> = ({project}) => {
         img
       </div>
       <nav className="flex flex-col justify-evenly items-center px-2">
-        <span>
-          <picture>
-            <source srcset={GitHubLight} media="(prefers-color-scheme: dark)" />
-            <img className="max-w-[1rem]" src={GitHubDark} alt="Repository" />
-          </picture>
+      <span>
+          <a href={project.liveURL}>
+            <picture>
+              <source srcset={GlobeLight} media="(prefers-color-scheme: dark)" />
+              <img className="max-w-[1rem]" src={GlobeDark} alt="Live" />
+            </picture>
+          </a>
         </span>
         <span>
-          <picture>
-            <source srcset={GlobeLight} media="(prefers-color-scheme: dark)" />
-            <img className="max-w-[1rem]" src={GlobeDark} alt="Repository" />
-          </picture>
-        </span>
+          <a href={project.repoURL}>
+            <picture>
+              <source srcset={GitHubLight} media="(prefers-color-scheme: dark)" />
+              <img className="max-w-[1rem]" src={GitHubDark} alt="Repository" />
+            </picture>
+          </a>
+        </span>        
       </nav>
       <section className="p-2">
         <h3 className="text-[1.25rem]">{project.name}</h3>
