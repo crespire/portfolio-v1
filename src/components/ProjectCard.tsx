@@ -5,7 +5,7 @@ import GlobeIcon from '../assets/globe-icon.png';
 
 const ProjectCard: FC<ProjectProps> = ({project}) => {
   return (
-    <article id={project.id} className="border border-lake border-solid group sm:m-5 flex flex-col p-2 transition ease-in duration-300 hover:scale-110 max-w-prose sm:w-1/3 md:w-1/4 lg:w-1/4 xl:w-1/5">
+    <article id={project.id} className="group sm:m-5 flex flex-col p-2 transition ease-in duration-300 hover:scale-110 max-w-prose sm:w-1/3 md:w-1/4 lg:w-1/4 xl:w-1/5 border-b pb-5 border-solid border-coffee dark:border-pale sm:border-0 last-of-type:border-b-0 last-of-type:pb-2">
       <header className="flex justify-center items-center">
         <img className="object-fill object-center grayscale transition ease-in duration-300 group-hover:grayscale-0" src={project.img} alt={project.name} />
       </header>
