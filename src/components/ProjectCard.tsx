@@ -5,7 +5,7 @@ import GlobeIcon from '../assets/globe-icon.png';
 
 const ProjectCard: FC<ProjectProps> = ({project}) => {
   return (
-    <article id={project.id} className="group sm:m-5 flex flex-col p-2 transition ease-in duration-300 hover:scale-110 max-w-prose sm:w-1/3 md:w-1/4 lg:w-1/4 xl:w-1/5">
+    <article id={project.id} className="border border-lake border-solid group sm:m-5 flex flex-col p-2 transition ease-in duration-300 hover:scale-110 max-w-prose sm:w-1/3 md:w-1/4 lg:w-1/4 xl:w-1/5">
       <header className="flex justify-center items-center">
         <img className="object-fill object-center grayscale transition ease-in duration-300 group-hover:grayscale-0" src={project.img} alt={project.name} />
       </header>
@@ -13,13 +13,13 @@ const ProjectCard: FC<ProjectProps> = ({project}) => {
         <a href={project.liveURL}><h3 className="text-[1.25rem]">{project.name}</h3></a>
         <div className="flex min-w-[3rem] justify-evenly items-center py-2">
           <span>
-              <a href={project.liveURL}>
-                <img className="max-w-[1rem] dark:invert" src={GlobeIcon} alt="Live" />
+              <a href={project.liveURL} className="">
+                <img className="max-w-[1rem] dark:invert transition ease-in hover:scale-125" src={GlobeIcon} alt="Live" />
               </a>
             </span>
             <span>
-              <a href={project.repoURL}>
-                <img className="max-w-[1rem] dark:invert" src={GitHubIcon} alt="Repository" />
+              <a href={project.repoURL} className="">
+                <img className="max-w-[1rem] dark:invert transition ease-in hover:scale-125" src={GitHubIcon} alt="Repository" />
               </a>
             </span>
         </div>
