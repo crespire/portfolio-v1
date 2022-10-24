@@ -7,7 +7,7 @@ const Hero: FC = () => {
       <span>
         Nice to meet you! I'm
         <h1 className="font-semibold text-[3rem] sm:text-[4rem]">Simmon Li</h1>
-        <h3 className="italic text-[1.25rem]">I love writing code.</h3>
+        <h3 className="italic text-[1.25rem]">I love building things with code.</h3>
       </span>
       <Bounce />
     </section>
