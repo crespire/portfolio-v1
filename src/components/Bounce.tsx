@@ -1,14 +1,10 @@
 import { FC } from 'react';
-import ArrowLight from '../assets/arrow-down-light.png';
-import ArrowDark from '../assets/arrow-down-dark.png';
+import ArrowIcon from '../assets/arrow-down.png';
 
 const Bounce: FC = () => {
   return (
     <div className='relative top-40 opacity-25 animate-bounce'>
-      <picture>
-        <source srcSet={ArrowLight} media="(prefers-color-scheme: dark)" />
-        <img src={ArrowDark} alt="&darr;" />
-      </picture>
+      <img className="dark:invert" src={ArrowIcon} alt="&darr;" />
     </div>
   );
 };

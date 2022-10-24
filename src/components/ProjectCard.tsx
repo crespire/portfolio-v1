@@ -1,9 +1,7 @@
 import { FC } from 'react';
 import { ProjectProps } from '../@types/projectCardProps';
-import GitHubLight from '../assets/github-light.png';
-import GitHubDark from '../assets/github-dark.png';
-import GlobeLight from '../assets/globe-light.png';
-import GlobeDark from '../assets/globe-dark.png';
+import GitHubIcon from '../assets/github-icon.png';
+import GlobeIcon from '../assets/globe-icon.png';
 
 const ProjectCard: FC<ProjectProps> = ({project}) => {
   return (
@@ -14,18 +12,12 @@ const ProjectCard: FC<ProjectProps> = ({project}) => {
       <nav className="flex flex-col justify-evenly items-center px-2">
       <span>
           <a href={project.liveURL}>
-            <picture>
-              <source srcSet={GlobeLight} media="(prefers-color-scheme: dark)" />
-              <img className="max-w-[1rem]" src={GlobeDark} alt="Live" />
-            </picture>
+            <img className="max-w-[1rem] dark:invert" src={GlobeIcon} alt="Live" />
           </a>
         </span>
         <span>
           <a href={project.repoURL}>
-            <picture>
-              <source srcSet={GitHubLight} media="(prefers-color-scheme: dark)" />
-              <img className="max-w-[1rem]" src={GitHubDark} alt="Repository" />
-            </picture>
+            <img className="max-w-[1rem] dark:invert" src={GitHubIcon} alt="Repository" />
           </a>
         </span>        
       </nav>
