@@ -11,7 +11,9 @@
     @apply p-1 hover:cursor-pointer;
   }
 
+  /**
   .project-card {
     @apply grid grid-cols-card p-2 transition ease-in duration-300 hover:scale-125;
   }
+  **/
 }

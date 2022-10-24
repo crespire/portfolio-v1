@@ -28,11 +28,41 @@ export const projects: Array<Project> = [
   {
     'id': `${projectSlug}shop`,
     'key': short.generate(),
-    'name': "Cozy Creature Canteen",
+    'name': "Pet Shop",
     'img': require(`${thumbPath}shop.png`),
     'liveURL': 'https://pet-shop.crespire.dev/',
     'repoURL': `${repoBaseURL}/js-shopping-cart`,
     'blurb': "A frontend storefront with multi-step checkout flow.",
     'tech': ['React', 'TailwindCSS', 'npm', 'git', 'vercel'],
+  },
+  {
+    'id': `${projectSlug}chess`,
+    'key': short.generate(),
+    'name': "Ruby Chess",
+    'img': require(`${thumbPath}chess.png`),
+    'liveURL': 'https://replit.com/@crespire/rubychess?lite=1&outputonly=1#README.md',
+    'repoURL': `${repoBaseURL}/ruby_chess`,
+    'blurb': "A two player command line Chess game written in Ruby.",
+    'tech': ['Ruby', 'replit', 'git'],
+  },
+  {
+    'id': `${projectSlug}cards`,
+    'key': short.generate(),
+    'name': "Memory Cards",
+    'img': require(`${thumbPath}cards.png`),
+    'liveURL': 'https://crespire.github.io/js-memory-cards/',
+    'repoURL': `${repoBaseURL}/js-memory-cards`,
+    'blurb': "A memory card game written with React hooks. Can you get them all?",
+    'tech': ['React', 'git', 'Github Pages']
+  },
+  {
+    'id': `${projectSlug}battleship`,
+    'key': short.generate(),
+    'name': "Battleship",
+    'img': require(`${thumbPath}battleship.png`),
+    'liveURL': 'https://crespire.github.io/js-battleship/',
+    'repoURL': `${repoBaseURL}/js-battleship`,
+    'blurb': "A frontend recreation of the classic game Battleship against a (dumb) computer.",
+    'tech': ['Javascript', 'jest', 'webpack', 'git', 'Github Pages']
   },
 ]

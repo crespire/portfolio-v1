@@ -8,7 +8,7 @@ const Header: FC = (props) => {
   const { currentTheme, themeToggle } = props;
 
   return (
-    <header className="sticky top-0 flex justify-between items-center border-b border-solid p-2 bg-pale dark:bg-coffee h-12">
+    <header className="sticky top-0 flex justify-between items-center border-b border-solid p-2 bg-pale dark:bg-coffee h-12 z-10">
       <div className="max-h-fit"><Link to="hero" spy={true} smooth={true} offset={headerOffset}><img className="max-h-[2rem]" src={logo} alt="SL" /></Link></div>
       <nav className="max-h-4 flex justify-end items-center space-x-2">
         <Link
