@@ -14,4 +14,4 @@ SPA with a few sections:
 * Typescript is not that scary. It took a little bit to find my feet, but it all made sense once I stopped to think about the errors I was getting.
 * Tailwind Dark mode via the class strategy is so flexible.
   * I initially was using `<picture>` elements with `srcSet` for alternate images in light/dark mode, but because I was just using solid black and white icons, I simply moved to the CSS `dark:invert` on the image element.
-*I wouldn't say I am the best at the frontend, but definitely more and more comfortable.
+* This project was actually a lot of fun. I always saw myself as more of a backend developer, but seeing things come together in this application was pretty awesome.
