@@ -18,9 +18,10 @@ module.exports = {
       fontFamily: {
         "barlow": ['Barlow', 'sans-serif']
       },
-      gridTemplateColumns: {
-        'card': '0.33fr 0.05fr 1fr',
-      }
+      fontSize: {
+        "dynamic-large": "clamp(3rem, 1.0435rem + 8.6957vw, 8rem)",
+        "dynamic-small": "clamp(1.25rem, 0.3696rem + 3.9130vw, 3.5rem)"
+      },
     },
   },
   plugins: [],
