@@ -5,9 +5,9 @@ import GlobeIcon from '../assets/globe-icon.png';
 
 const ProjectCard: FC<ProjectProps> = ({project}) => {
   return (
-    <article id={project.id} className="sm:m-5 flex flex-col p-2 transition ease-in duration-300 hover:scale-110 max-w-prose sm:w-1/3 md:w-1/4 lg:w-1/4 xl:w-1/5">
+    <article id={project.id} className="group sm:m-5 flex flex-col p-2 transition ease-in duration-300 hover:scale-110 max-w-prose sm:w-1/3 md:w-1/4 lg:w-1/4 xl:w-1/5">
       <header className="flex justify-center items-center">
-        <img className="object-fill object-center grayscale-[50%]" src={project.img} alt={project.name} />
+        <img className="object-fill object-center grayscale transition ease-in duration-300 group-hover:grayscale-0" src={project.img} alt={project.name} />
       </header>
       <nav className='flex items-center justify-between'>
         <a href={project.liveURL}><h3 className="text-[1.25rem]">{project.name}</h3></a>
