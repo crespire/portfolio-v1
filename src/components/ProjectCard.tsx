@@ -10,7 +10,7 @@ const ProjectCard: FC<ProjectProps> = ({project}) => {
         <img className="object-fill object-center grayscale transition ease-in duration-300 group-hover:grayscale-0" src={project.img} alt={project.name} />
       </header>
       <nav className='flex items-center justify-between'>
-        <a href={project.liveURL}><h3 className="text-[1.25rem]">{project.name}</h3></a>
+        <a href={project.liveURL}><h3 className="text-[1.25rem] hover:underline">{project.name}</h3></a>
         <div className="flex min-w-[3rem] justify-evenly items-center py-2">
           <span>
               <a href={project.liveURL} className="">
