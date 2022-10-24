@@ -4,7 +4,7 @@ const Footer: FC = () => {
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const button = document.querySelector('#emailme');
-      button.onclick = () => { window.location.href = 'mailto:hello@crespire.dev' };
+      button.onclick = () => { window.location.href = atob('bWFpbHRvOmhlbGxvQGNyZXNwaXJlLmRldj9zdWJqZWN0PUhlbGxv') };
     }
   }, []);
 
