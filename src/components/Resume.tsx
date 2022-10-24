@@ -1,4 +1,3 @@
-import myResume from '../assets/Simmon_Li_Resume.pdf';
 import { FC } from 'react';
 
 const Resume: FC = () => {
@@ -7,7 +6,7 @@ const Resume: FC = () => {
       <h1 className="font-semibold text-[1.25rem] sm:text-[2rem]">Hire Me!</h1>
       <p>You can find an <a className="underline" href="https://crespire.github.io/crespire/resume">online version of my resume here.</a></p>
       <span className="w-full flex justify-center">
-        <a className="p-4 border-solid border border-coffee dark:border-pale" href={myResume} download="Simmon_Li_Resume.pdf">Download PDF (51kb)</a>
+        <a className="p-4 border-solid border border-coffee dark:border-pale" href={process.env.PUBLIC_URL + 'Simmon_Li_Resume.pdf'} download="Simmon_Li_Resume.pdf">Download PDF (51kb)</a>
       </span>      
     </section>
   );
