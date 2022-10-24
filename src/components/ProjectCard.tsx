@@ -7,15 +7,15 @@ import GlobeDark from '../assets/globe-dark.png';
 
 const ProjectCard: FC<ProjectProps> = ({project}) => {
   return (
-    <article id={project.id} className="grid grid-cols-card p-2 transition ease-in duration-300 hover:scale-125">
-      <div>
-        img
+    <article id={project.id} className="project-card">
+      <div className="p-2 flex justify-center items-center">
+        <img className="object-cover object-center shadow-md grayscale" src={project.img} alt={project.name} />
       </div>
       <nav className="flex flex-col justify-evenly items-center px-2">
       <span>
           <a href={project.liveURL}>
             <picture>
-              <source srcset={GlobeLight} media="(prefers-color-scheme: dark)" />
+              <source srcSet={GlobeLight} media="(prefers-color-scheme: dark)" />
               <img className="max-w-[1rem]" src={GlobeDark} alt="Live" />
             </picture>
           </a>
@@ -23,14 +23,14 @@ const ProjectCard: FC<ProjectProps> = ({project}) => {
         <span>
           <a href={project.repoURL}>
             <picture>
-              <source srcset={GitHubLight} media="(prefers-color-scheme: dark)" />
+              <source srcSet={GitHubLight} media="(prefers-color-scheme: dark)" />
               <img className="max-w-[1rem]" src={GitHubDark} alt="Repository" />
             </picture>
           </a>
         </span>        
       </nav>
       <section className="p-2">
-        <h3 className="text-[1.25rem]">{project.name}</h3>
+        <a href={project.liveURL}><h3 className="text-[1.25rem]">{project.name}</h3></a>
         <span className="text-[.75rem] italic">{project.tech.join(', ')}</span>
         <p>{project.blurb}</p>
       </section>
