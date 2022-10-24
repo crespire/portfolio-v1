@@ -4,7 +4,7 @@
 
 @layer components {
   .link-active {
-    @apply border-b;
+    @apply border-b font-bold;
   }
 
   .link {
