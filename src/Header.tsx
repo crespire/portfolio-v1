@@ -1,10 +1,9 @@
-import { FC } from 'react';
 import logo from './assets/logo.png';
 import { Link } from "react-scroll";
 
 const headerOffset = 0;
 
-const Header: FC = (props) => {
+const Header = (props: any) => {
   const { currentTheme, themeToggle } = props;
 
   return (

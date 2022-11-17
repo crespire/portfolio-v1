@@ -1,13 +1,13 @@
 import Header from './Header';
 import Footer from './Footer';
-import { FC, useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Hero from './components/Hero';
 import About from './components/About';
 import Projects from './components/Projects';
 import Resume from './components/Resume';
 
-const App: FC = () => {
-  const [currentTheme, setCurrentTheme] = useState(null);
+const App = () => {
+  const [currentTheme, setCurrentTheme] = useState<string|null>(null);
   const themeToggle = () => {
     setCurrentTheme(oldTheme => oldTheme === 'dark' ? 'light' : 'dark');    
   }
