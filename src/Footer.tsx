@@ -3,8 +3,10 @@ import { FC, useEffect } from 'react';
 const Footer: FC = () => {
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      const button = document.querySelector('#emailme');
-      button.onclick = () => { window.location.href = atob('bWFpbHRvOmhlbGxvQGNyZXNwaXJlLmRldj9zdWJqZWN0PUhlbGxv') };
+      const button = document.querySelector<HTMLElement>('#emailme');
+      if (button !== null) {
+        button.onclick = () => { window.location.href = atob('bWFpbHRvOmhlbGxvQGNyZXNwaXJlLmRldj9zdWJqZWN0PUhlbGxv') };
+      }
     }
   }, []);
 
