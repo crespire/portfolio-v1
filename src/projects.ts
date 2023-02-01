@@ -50,7 +50,7 @@ export const projects: Array<Project> = [
     'key': short.generate(),
     'name': "Memory Cards",
     'img': require(`${thumbPath}cards.png`),
-    'liveURL': 'https://crespire.github.io/js-memory-cards/',
+    'liveURL': 'https://memory-cards.crespire.dev/',
     'repoURL': `${repoBaseURL}/js-memory-cards`,
     'blurb': "A memory card game written with React hooks. Can you get them all?",
     'tech': ['React', 'git', 'Github Pages']
