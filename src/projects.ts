@@ -16,6 +16,16 @@ export const projects: Array<Project> = [
     'tech': ['Ruby on Rails', 'Turbo/Stimulus', 'Sass CSS', 'RSpec', 'Heroku', 'AWS S3', 'git']
   },
   {
+    'id': `${projectSlug}buysell`,
+    'key': short.generate(),
+    'name': 'Buy & Sell',
+    'img': require(`${thumbPath}buysell.png`),
+    'liveURL': 'https://buysell.crespire.dev/',
+    'repoURL': `${repoBaseURL}/buysell`,
+    'blurb': 'A buy and sell toy application powered by a Typescript React frontend and Rails 7 api.',
+    'tech': ['Ruby on Rails', 'Typescript', 'React', 'TailwindCSS', 'DaisyUI', 'React Query', 'RSpec', 'Cypress', 'docker', 'AWS S3', 'git']
+  },
+  {
     'id': `${projectSlug}waldo`,
     'key': short.generate(),
     'name': "Where's Waldo?",
