@@ -39,7 +39,7 @@ const App = () => {
   return (
     <div className="container mx-auto max-w-prose w-auto sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl px-4 bg-pale text-coffee dark:text-pale dark:bg-coffee">
       <Header currentTheme={currentTheme} themeToggle={themeToggle} />
-      <main className="-z-1 flex flex-col items-center">
+      <main className="-z-1 flex flex-col items-center leading-snug sm:leading-normal">
         <Hero />
         <About />
         <Projects />
