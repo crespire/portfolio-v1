@@ -15,3 +15,4 @@ SPA with a few sections:
 * Tailwind Dark mode via the class strategy is so flexible.
   * I initially was using `<picture>` elements with `srcSet` for alternate images in light/dark mode, but because I was just using solid black and white icons, I simply moved to the CSS `dark:invert` on the image element.
 * This project was actually a lot of fun. I always saw myself as more of a backend developer, but seeing things come together in this application was pretty awesome.
+* Google Analytics is cool!
