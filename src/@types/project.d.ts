@@ -4,7 +4,7 @@ export interface Project {
   name: string;
   img: string;
   liveURL: string;
-  repoURL: string;
+  repoURL: string | null;
   blurb: string;
   tech: string[];
 }

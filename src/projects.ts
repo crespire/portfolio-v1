@@ -6,6 +6,16 @@ const thumbPath = './assets/project_thumbs/';
 
 export const projects: Array<Project> = [
   {
+    'id': `${projectSlug}ezn`,
+    'key': short.generate(),
+    'name': 'EZ Newswire',
+    'img': require(`${thumbPath}ezn.png`),
+    'liveURL': 'https://app.eznewswire.com/',
+    'repoURL': null,
+    'blurb': 'A press release generator and publishing network for automating announcements.',
+    'tech': ['Ruby on Rails', 'Turbo/Stimulus', 'Bootstrap', 'RSpec', 'ViewComponents']
+  },
+  {
     'id': `${projectSlug}railsbook`,
     'key': short.generate(),
     'name': 'Railsbook',

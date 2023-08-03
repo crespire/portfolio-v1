@@ -7,7 +7,7 @@ const Resume: FC = () => {
       <h1 className="font-semibold text-[3rem] sm:text-[4rem] text-lake">Hire Me!</h1>
       <p>You can find an <a className="underline" href="https://crespire.github.io/crespire/resume">online version of my resume here.</a></p>
       <span className="w-full flex justify-center">
-        <a className="p-4 border-solid border border-coffee dark:border-pale" href={myResume} download="Simmon_Li_Resume.pdf">Download PDF (98kb)</a>
+        <a className="p-4 border-solid border border-coffee dark:border-pale" href={myResume} download="Simmon_Li_Resume.pdf">Download PDF (101kb)</a>
       </span>      
     </section>
   );
